@@ -1006,7 +1006,7 @@ nav {
                 opacity: 0;
                 transform: translateX(-50px);
                 animation: fadeInFromLeft 3s cubic-bezier(0.77, 0, 0.175, 1) forwards;
-                filter: blur(2px);
+                filter: blur(1px);
                 
             }
 
@@ -1052,8 +1052,9 @@ nav {
                 max-width: 900px;
                 padding: 2rem;
                 animation: fadeInUp 3s cubic-bezier(0.77, 0, 0.175, 1);
-                right: 10%;
-                bottom: 50%;
+                left: 2%;
+                bottom: 40%;
+                z-index: 2;
             }
 
             @keyframes fadeInUp {
