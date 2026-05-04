@@ -283,6 +283,11 @@ nav {
     transform: translateX(-50%);
     animation: bounce 2s infinite;
     z-index: 2;
+
+    p{
+        font-size: 40px;
+        font-family: Arial ;
+    }
 }
 
 @keyframes bounce {
@@ -303,6 +308,7 @@ nav {
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
     align-items: center;
+    background: rgba(72, 71, 71, 0);
 }
 
 .about-image {
@@ -415,14 +421,19 @@ nav {
             box-shadow: 0 15px 40px rgba(0, 102, 204, 0.15);
         }
 
-        .service-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
+        .service-icon img {
+            width: 200px;
+            max-width: 300px;
+            height:auto;
+            object-fit: contain;
+            padding: 5px;
+            justify-self: center;
+            align-self: center;
         }
 
         .service-card h3 {
-            font-size: 1.5rem;
-            color: var(--dark-gray);
+            font-size: 1rem;
+            color: var(--primary-blue);
             margin-bottom: 1rem;
         }
 
@@ -975,18 +986,18 @@ nav {
                 margin-top: 50px;
                 height: auto;
                 width: 100%;
-                min-height: 100vh;
+                min-height: 90vh;
                 padding: 2rem 1rem;
                 background-image: url('background 1.png');
                  background-position: center;
                  background-repeat: no-repeat;
                  background-attachment: fixed;
                 background-size: cover;
-                filter: blur(1px);
+                backdrop-filter: blur(10px);
             }
             .hero {
                 margin-top: 60px;
-                height: 100vh;
+                height: 70vh;
                 position: relative;
                 overflow: hidden;
                 display: flex;
@@ -1005,8 +1016,8 @@ nav {
                 border-radius: 12px;
                 opacity: 0;
                 transform: translateX(-50px);
-                animation: fadeInFromLeft 3s cubic-bezier(0.77, 0, 0.175, 1) forwards;
-                filter: blur(1px);
+                animation: fadeInFromLeft 7s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+                filter: blur(0.5px);
                 
             }
 
@@ -1055,6 +1066,7 @@ nav {
                 left: 2%;
                 bottom: 40%;
                 z-index: 2;
+                right: 50%;
             }
 
             @keyframes fadeInUp {
@@ -1104,25 +1116,11 @@ nav {
             .services {
                 padding: 3rem 1rem;
             }
-
             .why-choose {
                 padding: 3rem 1rem;
             }
-
-            .testimonials {
-                padding: 3rem 1rem;
-            }
-
-            .gallery {
-                padding: 3rem 1rem;
-            }
-
             .contact {
                 padding: 3rem 1rem;
-            }
-
-            .gallery-grid {
-                grid-template-columns: 1fr;
             }
 
             .stats-section {
