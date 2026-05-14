@@ -32,7 +32,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background-image: url('background 1.png');
+    background-image: url('background-1.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -1012,6 +1012,20 @@ nav {
                 color: white;
                 text-align: center;
             }
+            .scroll-indicator {
+                position: absolute;
+                gap: 2px;
+                bottom: 10px;
+                left: 50%;
+                transform: translateX(-50%);
+                animation: bounce 1s infinite;
+                z-index: 2;
+
+                p{
+                    font-size: 30px;
+                    font-family: Arial ;
+                }
+            }
             .realimage{
                 float: right;
                 height: 80vh;
@@ -1020,7 +1034,7 @@ nav {
                 margin-left: 1.5rem;
                 border-radius: 12px;
                 transform: translateX(-50px);
-                animation: fadeInFromLeft 7s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+                animation: fadeInFromLeft 2s cubic-bezier(0.77, 0, 0.175, 1) forwards;
                 filter: blur(2px);
                 
             }
@@ -1145,7 +1159,7 @@ nav {
             }
             to {
                 opacity: 1;
-                transform: translateY(20-);
+                transform: translateY(0);
             }
         }
 
